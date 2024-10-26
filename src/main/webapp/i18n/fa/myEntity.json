@@ -1,0 +1,24 @@
+{
+  "myJhipApp": {
+    "myEntity": {
+      "home": {
+        "title": "My Entities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new My Entity",
+        "createOrEditLabel": "Create or edit a My Entity",
+        "notFound": "No My Entities found"
+      },
+      "created": "A new My Entity is created with identifier {{ param }}",
+      "updated": "A My Entity is updated with identifier {{ param }}",
+      "deleted": "A My Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete My Entity {{ id }}?"
+      },
+      "detail": {
+        "title": "My Entity"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}

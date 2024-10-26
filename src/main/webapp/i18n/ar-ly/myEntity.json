@@ -1,0 +1,24 @@
+{
+  "myJhipApp": {
+    "myEntity": {
+      "home": {
+        "title": "My Entities",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء My Entity جديد",
+        "createOrEditLabel": "إنشاء أو تعديل My Entity",
+        "notFound": "لم يتم العثور على My Entities"
+      },
+      "created": "My Entity جديد تم إنشاؤه بالمعرف {{ param }}",
+      "updated": "My Entity تم تحديثه بالمعرف {{ param }}",
+      "deleted": "My Entity تم حذفه بالمعرف {{ param }}",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف My Entity {{ id }}؟"
+      },
+      "detail": {
+        "title": "My Entity"
+      },
+      "id": "ID",
+      "name": "Name"
+    }
+  }
+}
