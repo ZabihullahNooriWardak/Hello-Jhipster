@@ -47,7 +47,8 @@ public class MyEntityAsserts {
     public static void assertMyEntityUpdatableFieldsEquals(MyEntity expected, MyEntity actual) {
         assertThat(expected)
             .as("Verify MyEntity relevant properties")
-            .satisfies(e -> assertThat(e.getName()).as("check name").isEqualTo(actual.getName()));
+            .satisfies(e -> assertThat(e.getName()).as("check name").isEqualTo(actual.getName()))
+            .satisfies(e -> assertThat(e.getDescription()).as("check description").isEqualTo(actual.getDescription()));
     }
 
     /**

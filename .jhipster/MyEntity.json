@@ -8,6 +8,10 @@
       "fieldName": "name",
       "fieldType": "String",
       "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
     }
   ],
   "jpaMetamodelFiltering": false,

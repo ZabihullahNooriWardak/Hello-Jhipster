@@ -18,7 +18,8 @@
         "title": "My Entity"
       },
       "id": "ID",
-      "name": "Name"
+      "name": "Name",
+      "description": "Description"
     }
   }
 }

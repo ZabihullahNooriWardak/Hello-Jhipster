@@ -37,6 +37,9 @@ class MyEntityResourceIT {
     private static final String DEFAULT_NAME = "AAAAAAAAAA";
     private static final String UPDATED_NAME = "BBBBBBBBBB";
 
+    private static final String DEFAULT_DESCRIPTION = "AAAAAAAAAA";
+    private static final String UPDATED_DESCRIPTION = "BBBBBBBBBB";
+
     private static final String ENTITY_API_URL = "/api/my-entities";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -69,7 +72,7 @@ class MyEntityResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static MyEntity createEntity() {
-        return new MyEntity().name(DEFAULT_NAME);
+        return new MyEntity().name(DEFAULT_NAME).description(DEFAULT_DESCRIPTION);
     }
 
     /**
@@ -79,7 +82,7 @@ class MyEntityResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static MyEntity createUpdatedEntity() {
-        return new MyEntity().name(UPDATED_NAME);
+        return new MyEntity().name(UPDATED_NAME).description(UPDATED_DESCRIPTION);
     }
 
     @BeforeEach
@@ -166,7 +169,8 @@ class MyEntityResourceIT {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(myEntity.getId().intValue())))
-            .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME)));
+            .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME)))
+            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION)));
     }
 
     @Test
@@ -181,7 +185,8 @@ class MyEntityResourceIT {
             .andExpect(status().isOk())
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.id").value(myEntity.getId().intValue()))
-            .andExpect(jsonPath("$.name").value(DEFAULT_NAME));
+            .andExpect(jsonPath("$.name").value(DEFAULT_NAME))
+            .andExpect(jsonPath("$.description").value(DEFAULT_DESCRIPTION));
     }
 
     @Test
@@ -203,7 +208,7 @@ class MyEntityResourceIT {
         MyEntity updatedMyEntity = myEntityRepository.findById(myEntity.getId()).orElseThrow();
         // Disconnect from session so that the updates on updatedMyEntity are not directly saved in db
         em.detach(updatedMyEntity);
-        updatedMyEntity.name(UPDATED_NAME);
+        updatedMyEntity.name(UPDATED_NAME).description(UPDATED_DESCRIPTION);
         MyEntityDTO myEntityDTO = myEntityMapper.toDto(updatedMyEntity);
 
         restMyEntityMockMvc
@@ -293,6 +298,8 @@ class MyEntityResourceIT {
         MyEntity partialUpdatedMyEntity = new MyEntity();
         partialUpdatedMyEntity.setId(myEntity.getId());
 
+        partialUpdatedMyEntity.name(UPDATED_NAME);
+
         restMyEntityMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedMyEntity.getId())
@@ -319,7 +326,7 @@ class MyEntityResourceIT {
         MyEntity partialUpdatedMyEntity = new MyEntity();
         partialUpdatedMyEntity.setId(myEntity.getId());
 
-        partialUpdatedMyEntity.name(UPDATED_NAME);
+        partialUpdatedMyEntity.name(UPDATED_NAME).description(UPDATED_DESCRIPTION);
 
         restMyEntityMockMvc
             .perform(

@@ -98,6 +98,13 @@ export const MyEntityUpdate = () => {
                   required: { value: true, message: translate('entity.validation.required') },
                 }}
               />
+              <ValidatedField
+                label={translate('myJhipApp.myEntity.description')}
+                id="my-entity-description"
+                name="description"
+                data-cy="description"
+                type="text"
+              />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/my-entity" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;

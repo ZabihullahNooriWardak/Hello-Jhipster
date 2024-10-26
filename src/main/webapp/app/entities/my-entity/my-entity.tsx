@@ -115,6 +115,10 @@ export const MyEntity = () => {
                 <th className="hand" onClick={sort('name')}>
                   <Translate contentKey="myJhipApp.myEntity.name">Name</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('name')} />
                 </th>
+                <th className="hand" onClick={sort('description')}>
+                  <Translate contentKey="myJhipApp.myEntity.description">Description</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('description')} />
+                </th>
                 <th />
               </tr>
             </thead>
@@ -127,6 +131,7 @@ export const MyEntity = () => {
                     </Button>
                   </td>
                   <td>{myEntity.name}</td>
+                  <td>{myEntity.description}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/my-entity/${myEntity.id}`} color="info" size="sm" data-cy="entityDetailsButton">
