@@ -37,6 +37,12 @@ export const MyEntityDetail = () => {
             </span>
           </dt>
           <dd>{myEntityEntity.name}</dd>
+          <dt>
+            <span id="description">
+              <Translate contentKey="myJhipApp.myEntity.description">Description</Translate>
+            </span>
+          </dt>
+          <dd>{myEntityEntity.description}</dd>
         </dl>
         <Button tag={Link} to="/my-entity" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

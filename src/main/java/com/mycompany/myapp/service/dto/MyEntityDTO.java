@@ -15,6 +15,8 @@ public class MyEntityDTO implements Serializable {
     @NotNull
     private String name;
 
+    private String description;
+
     public Long getId() {
         return id;
     }
@@ -29,6 +31,14 @@ public class MyEntityDTO implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
@@ -58,6 +68,7 @@ public class MyEntityDTO implements Serializable {
         return "MyEntityDTO{" +
             "id=" + getId() +
             ", name='" + getName() + "'" +
+            ", description='" + getDescription() + "'" +
             "}";
     }
 }
