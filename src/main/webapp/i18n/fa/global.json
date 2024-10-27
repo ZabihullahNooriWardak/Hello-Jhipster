@@ -1,6 +1,6 @@
 {
   "global": {
-    "title": "MyJhip",
+    "title": "Wednesday",
     "browsehappy": "شما از مرورگر <strong>قدیمی</strong> استفاده می‌کنید. لطفا <a href=\"http://browsehappy.com/?locale=en\">مرورگر خود را به روز کنید</a>",
     "menu": {
       "home": "خانه",
@@ -8,7 +8,11 @@
       "entities": {
         "main": "ماهیت ها",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
-        "myEntity": "My Entity"
+        "myEntity": "My Entity",
+        "student": "Student",
+        "studentDetails": "Student Details",
+        "studClass": "Stud Class",
+        "school": "School"
       },
       "account": {
         "main": "حساب",

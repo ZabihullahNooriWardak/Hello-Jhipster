@@ -1,0 +1,43 @@
+
+application {
+  config {
+    baseName wednesday
+    applicationType monolith
+    packageName com.myapp
+    authenticationType jwt
+    prodDatabaseType mysql
+    clientFramework react
+  }
+  entities *
+}
+
+entity Student{
+name String,
+lastName String
+}
+entity StudentDetails{
+phone String
+email String
+address String
+}
+
+entity StudClass{
+className String
+subject String
+}
+entity School{
+name String
+address String
+}
+
+relationship OneToOne{
+Student{studentDetails} to StudentDetails
+}
+
+relationship OneToMany{
+School{students} to Student{school}
+}
+
+relationship ManyToMany{
+StudClass{students} to Student{studClasses}
+}

@@ -1,0 +1,27 @@
+{
+  "wednesdayApp": {
+    "studentDetails": {
+      "home": {
+        "title": "Student Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Student Details",
+        "createOrEditLabel": "Create or edit a Student Details",
+        "notFound": "No Student Details found"
+      },
+      "created": "A new Student Details is created with identifier {{ param }}",
+      "updated": "A Student Details is updated with identifier {{ param }}",
+      "deleted": "A Student Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Student Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Student Details"
+      },
+      "id": "ID",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "student": "Student"
+    }
+  }
+}

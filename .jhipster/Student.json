@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20241027045456"
+  },
+  "applications": ["wednesday"],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Student",
+  "relationships": [
+    {
+      "otherEntityName": "studentDetails",
+      "relationshipName": "studentDetails",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "school",
+      "otherEntityRelationshipName": "students",
+      "relationshipName": "school",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "studClass",
+      "otherEntityRelationshipName": "students",
+      "relationshipName": "studClasses",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

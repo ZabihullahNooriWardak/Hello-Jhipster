@@ -1,0 +1,26 @@
+{
+  "wednesdayApp": {
+    "school": {
+      "home": {
+        "title": "Schools",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء School جديد",
+        "createOrEditLabel": "إنشاء أو تعديل School",
+        "notFound": "لم يتم العثور على Schools"
+      },
+      "created": "School جديد تم إنشاؤه بالمعرف {{ param }}",
+      "updated": "School تم تحديثه بالمعرف {{ param }}",
+      "deleted": "School تم حذفه بالمعرف {{ param }}",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف School {{ id }}؟"
+      },
+      "detail": {
+        "title": "School"
+      },
+      "id": "ID",
+      "name": "Name",
+      "address": "Address",
+      "students": "Students"
+    }
+  }
+}

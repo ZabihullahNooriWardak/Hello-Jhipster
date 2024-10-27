@@ -44,8 +44,8 @@ export const MyEntityDeleteDialog = () => {
       <ModalHeader toggle={handleClose} data-cy="myEntityDeleteDialogHeading">
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="myJhipApp.myEntity.delete.question">
-        <Translate contentKey="myJhipApp.myEntity.delete.question" interpolate={{ id: myEntityEntity.id }}>
+      <ModalBody id="wednesdayApp.myEntity.delete.question">
+        <Translate contentKey="wednesdayApp.myEntity.delete.question" interpolate={{ id: myEntityEntity.id }}>
           Are you sure you want to delete this MyEntity?
         </Translate>
       </ModalBody>

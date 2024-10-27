@@ -91,16 +91,16 @@ export const MyEntity = () => {
   return (
     <div>
       <h2 id="my-entity-heading" data-cy="MyEntityHeading">
-        <Translate contentKey="myJhipApp.myEntity.home.title">My Entities</Translate>
+        <Translate contentKey="wednesdayApp.myEntity.home.title">My Entities</Translate>
         <div className="d-flex justify-content-end">
           <Button className="me-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="myJhipApp.myEntity.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="wednesdayApp.myEntity.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to="/my-entity/new" className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="myJhipApp.myEntity.home.createLabel">Create new My Entity</Translate>
+            <Translate contentKey="wednesdayApp.myEntity.home.createLabel">Create new My Entity</Translate>
           </Link>
         </div>
       </h2>
@@ -110,13 +110,14 @@ export const MyEntity = () => {
             <thead>
               <tr>
                 <th className="hand" onClick={sort('id')}>
-                  <Translate contentKey="myJhipApp.myEntity.id">ID</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
+                  <Translate contentKey="wednesdayApp.myEntity.id">ID</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('id')} />
                 </th>
                 <th className="hand" onClick={sort('name')}>
-                  <Translate contentKey="myJhipApp.myEntity.name">Name</Translate> <FontAwesomeIcon icon={getSortIconByFieldName('name')} />
+                  <Translate contentKey="wednesdayApp.myEntity.name">Name</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('name')} />
                 </th>
                 <th className="hand" onClick={sort('description')}>
-                  <Translate contentKey="myJhipApp.myEntity.description">Description</Translate>{' '}
+                  <Translate contentKey="wednesdayApp.myEntity.description">Description</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('description')} />
                 </th>
                 <th />
@@ -174,7 +175,7 @@ export const MyEntity = () => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="myJhipApp.myEntity.home.notFound">No My Entities found</Translate>
+              <Translate contentKey="wednesdayApp.myEntity.home.notFound">No My Entities found</Translate>
             </div>
           )
         )}

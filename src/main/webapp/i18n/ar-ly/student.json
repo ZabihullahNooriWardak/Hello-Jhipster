@@ -1,0 +1,28 @@
+{
+  "wednesdayApp": {
+    "student": {
+      "home": {
+        "title": "Students",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Student جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Student",
+        "notFound": "لم يتم العثور على Students"
+      },
+      "created": "Student جديد تم إنشاؤه بالمعرف {{ param }}",
+      "updated": "Student تم تحديثه بالمعرف {{ param }}",
+      "deleted": "Student تم حذفه بالمعرف {{ param }}",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Student {{ id }}؟"
+      },
+      "detail": {
+        "title": "Student"
+      },
+      "id": "ID",
+      "name": "Name",
+      "lastName": "Last Name",
+      "studentDetails": "Student Details",
+      "school": "School",
+      "studClasses": "Stud Classes"
+    }
+  }
+}

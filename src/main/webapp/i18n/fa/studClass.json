@@ -1,0 +1,26 @@
+{
+  "wednesdayApp": {
+    "studClass": {
+      "home": {
+        "title": "Stud Classes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Stud Class",
+        "createOrEditLabel": "Create or edit a Stud Class",
+        "notFound": "No Stud Classes found"
+      },
+      "created": "A new Stud Class is created with identifier {{ param }}",
+      "updated": "A Stud Class is updated with identifier {{ param }}",
+      "deleted": "A Stud Class is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stud Class {{ id }}?"
+      },
+      "detail": {
+        "title": "Stud Class"
+      },
+      "id": "ID",
+      "className": "Class Name",
+      "subject": "Subject",
+      "students": "Students"
+    }
+  }
+}

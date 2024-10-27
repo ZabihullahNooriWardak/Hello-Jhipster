@@ -67,8 +67,8 @@ export const MyEntityUpdate = () => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="myJhipApp.myEntity.home.createOrEditLabel" data-cy="MyEntityCreateUpdateHeading">
-            <Translate contentKey="myJhipApp.myEntity.home.createOrEditLabel">Create or edit a MyEntity</Translate>
+          <h2 id="wednesdayApp.myEntity.home.createOrEditLabel" data-cy="MyEntityCreateUpdateHeading">
+            <Translate contentKey="wednesdayApp.myEntity.home.createOrEditLabel">Create or edit a MyEntity</Translate>
           </h2>
         </Col>
       </Row>
@@ -89,7 +89,7 @@ export const MyEntityUpdate = () => {
                 />
               ) : null}
               <ValidatedField
-                label={translate('myJhipApp.myEntity.name')}
+                label={translate('wednesdayApp.myEntity.name')}
                 id="my-entity-name"
                 name="name"
                 data-cy="name"
@@ -99,7 +99,7 @@ export const MyEntityUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('myJhipApp.myEntity.description')}
+                label={translate('wednesdayApp.myEntity.description')}
                 id="my-entity-description"
                 name="description"
                 data-cy="description"

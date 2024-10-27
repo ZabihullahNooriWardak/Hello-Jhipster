@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20241027045458"
+  },
+  "applications": ["wednesday"],
+  "fields": [
+    {
+      "fieldName": "className",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subject",
+      "fieldType": "String"
+    }
+  ],
+  "name": "StudClass",
+  "relationships": [
+    {
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "studClasses",
+      "relationshipName": "students",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

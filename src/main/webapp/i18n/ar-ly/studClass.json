@@ -1,0 +1,26 @@
+{
+  "wednesdayApp": {
+    "studClass": {
+      "home": {
+        "title": "Stud Classes",
+        "refreshListLabel": "تحديث القائمة",
+        "createLabel": "إنشاء Stud Class جديد",
+        "createOrEditLabel": "إنشاء أو تعديل Stud Class",
+        "notFound": "لم يتم العثور على Stud Classes"
+      },
+      "created": "Stud Class جديد تم إنشاؤه بالمعرف {{ param }}",
+      "updated": "Stud Class تم تحديثه بالمعرف {{ param }}",
+      "deleted": "Stud Class تم حذفه بالمعرف {{ param }}",
+      "delete": {
+        "question": "هل أنت متأكد أنك تريد حذف Stud Class {{ id }}؟"
+      },
+      "detail": {
+        "title": "Stud Class"
+      },
+      "id": "ID",
+      "className": "Class Name",
+      "subject": "Subject",
+      "students": "Students"
+    }
+  }
+}

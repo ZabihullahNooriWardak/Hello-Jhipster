@@ -22,7 +22,7 @@ export const MyEntityDetail = () => {
     <Row>
       <Col md="8">
         <h2 data-cy="myEntityDetailsHeading">
-          <Translate contentKey="myJhipApp.myEntity.detail.title">MyEntity</Translate>
+          <Translate contentKey="wednesdayApp.myEntity.detail.title">MyEntity</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -33,13 +33,13 @@ export const MyEntityDetail = () => {
           <dd>{myEntityEntity.id}</dd>
           <dt>
             <span id="name">
-              <Translate contentKey="myJhipApp.myEntity.name">Name</Translate>
+              <Translate contentKey="wednesdayApp.myEntity.name">Name</Translate>
             </span>
           </dt>
           <dd>{myEntityEntity.name}</dd>
           <dt>
             <span id="description">
-              <Translate contentKey="myJhipApp.myEntity.description">Description</Translate>
+              <Translate contentKey="wednesdayApp.myEntity.description">Description</Translate>
             </span>
           </dt>
           <dd>{myEntityEntity.description}</dd>

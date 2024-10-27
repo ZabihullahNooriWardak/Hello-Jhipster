@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20241027045457"
+  },
+  "applications": ["wednesday"],
+  "fields": [
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    }
+  ],
+  "name": "StudentDetails",
+  "relationships": [],
+  "searchEngine": "no"
+}
